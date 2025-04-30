@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanjeev kumar | portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f6f8;
+      color: #2e2e2e;
+      line-height: 1.6;
+    }
+    header {
+      background: #0d1b2a;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+    header p {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    nav {
+      background: #1b263b;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: #e0e1dd;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffb703;
+    }
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 3rem 1rem;
+    }
+    section h2 {
+      font-size: 2.5rem;
+      color: #1b263b;
+      margin-bottom: 1rem;
+      transition: transform 0.3s, color 0.3s;
+    }
+    section h2:hover {
+      transform: scale(1.05);
+      color: #fb8500;
+    }
+    .skills, .projects, .hobbies {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #ffffff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: slideIn 0.5s forwards;
+    }
+    @keyframes slideIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+    }
+    .contact-info p {
+      margin-bottom: 0.7rem;
+    }
+    .highlight {
+      color: #fb8500;
+      font-weight: 700;
+    }
+    .button {
+      display: inline-block;
+      background-color: #fb8500;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 1.5rem;
+      transition: background-color 0.3s;
+    }
+    .button:hover {
+      background-color: #e07a00;
+    }
+    footer {
+      text-align: center;
+      background: #0d1b2a;
+      color: white;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+</style>
+</head>
+<body>
+  <header>
+    <img src="Sanjeev kumar.jpg" alt="Profile Photo" class="profile-photo">
+    <h1>Sanjeev kumar</h1>
+    <p>First Year Student | Computer Engineering Branch</p>
+    <a href="#contact" class="button">Get in Touch</a>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <img src="Sanjeev kumar.jpg" alt="Profile Photo" class="profile-photo" size="100px">
+    <h2>About Me</h2>
+    <p>Hi! I'm <span class="highlight">Sanjeev kumar</span>, a first-year student specializing in <span class="highlight">Computer Engineering</span>. I enjoy exploring how data and algorithms shape the future, building intelligent systems, and developing meaningful applications using machine learning. I'm passionate about artificial intelligence, neural networks, and the world of automation. I'm currently exploring real-world projects and contributing to open-source communities.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">Python (BASICS)</div>
+      <div class="card">Pandas & NumPy</div>
+      <div class="card">Data Modelling</div>
+      <div class="card">C Programming</div>
+      <div class="card">HTML, CSS & JavaScript</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>CERTIFICATE</h2>
+    <div class="projects">
+      <div class="card">
+        
+        <a href="Sanjeev Kumar.pdf" alt="Railway project" style="text-decoration: none; color: inherit;">AI/ML certificate</a>
+      </div>
+      <div class="card">
+        <a href="python_basic certificate (1).pdf" target="_blank" style="text-decoration: none; color: inherit;">
+          python basic certificate
+            </a>
+            
+          </div>
+    </div>
+  </section>
+
+  <section id="hobbies">
+    <h2>Hobbies</h2>
+    <div class="hobbies">
+      <div class="card">
+        <div class="card">
+        📚 Reading Books
+        </div>
+      </div>
+      <div class="card">
+        <div class="card">
+        🎮 Playing Video Games
+        </div>
+      </div>
+      <div class="card">
+        <div class="card">
+        🎨 Painting and Drawing
+        </div>
+      </div>
+      <div class="card">
+        <div class="card">
+          🌍 Traveling and Exploring
+          </div>
+        </div>
+      <div class="card">
+        <div class="card">
+        🎶 Listening to Musiclo
+        </div>
+      </div>
+      <div class="card">
+        <div class="card">
+        🧩 Solving Puzzles
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:Sanjeev.Kumarsharma@example.com">202401040282@mitaoe.ac.in</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/Sanjeev Kumar" target="_blank">linkedin.com/in/Sanjeev Kumar</a></p>
+      <p>GitHub: <a href="https://github.com/sanjeev-21kumar" target="_blank">github.com/Sanjeev-21kumar</a></p>
+      <p><a href="#" class="button">Download Resume</a></p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Sanjeev kumar | Computer Engineering Student
+  </footer>
+</body>
+</html>
